@@ -1,0 +1,357 @@
+/* ==============navar section================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+body {
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+}
+
+.navbar {
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.nav-item .active {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: #FFC80A !important;
+}
+
+.navbar-nav {
+    text-align: center;
+}
+
+.nav-item .nav-item-border {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: #fff !important;
+}
+
+.nav-item .nav-item-border:hover {
+    color: #FFC80A!important;
+    transition: 2s;
+}
+
+
+/* ============slider section================= */
+
+.carousel-caption {
+    bottom: 220px;
+}
+
+.carousel-caption h5 {
+    font-size: 80px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    font-family: 'Great Vibes', cursive;
+    margin-top: 25px;
+    color: #fff;
+}
+
+.carousel-caption p {
+    width: 60%;
+    margin: auto;
+    font-size: 18px;
+    line-height: 1.9;
+    font-family: poppins;
+    color: #fff;
+}
+
+
+/* ==================about section=================== */
+
+#about .about-img {
+    position: relative;
+}
+
+#about .about-img .man {
+    position: absolute;
+    bottom: 155px;
+    top: 0px;
+    left: 40px;
+}
+
+.about_display {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-para {
+    margin-top: 120px;
+    width: 90%;
+    margin-left: 50px;
+    padding: 20px;
+}
+
+.about-me {
+    color: #FFC80A;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 900;
+    font-size: 40px;
+}
+
+.p-first {
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    font-size: 15px;
+}
+
+@media only screen and (max-width: 780px) {
+    .about_display {
+        flex-direction: column;
+        width: 80%;
+    }
+    .about-para {
+        margin-top: 20px;
+        width: 645px;
+        margin-left: -10px;
+    }
+    .about-img img {
+        width: 400px;
+        margin-left: 130px;
+        margin-top: 10px;
+    }
+    #about .about-img .man {
+        position: absolute;
+        bottom: 155px;
+        top: -52px;
+        left: 27px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .about_display {
+        flex-direction: column;
+    }
+    .about-para {
+        margin-top: 20px;
+        width: 470px;
+        margin-left: -20px;
+    }
+    .about-img img {
+        width: 350px;
+        margin-left: 30px;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    .about_display {
+        flex-direction: column;
+    }
+    .about-para {
+        margin-top: 20px;
+        width: 360px;
+        margin-left: -20px;
+    }
+    .about-img img {
+        width: 250px;
+        margin-left: 30px;
+    }
+    #about .about-img .man {
+        position: absolute;
+        bottom: 155px;
+        top: -35px;
+        left: 18px;
+    }
+}
+
+
+/* ==================card section style============== */
+
+.card-para {
+    text-align: center;
+}
+
+.card-h2 {
+    color: #FFC80A;
+    font-weight: 900;
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+    padding-bottom: 20px;
+    /* border-bottom: 2px solid #fff; */
+}
+
+.flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+    perspective: 1000px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin: 20px;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.flip-card-front {
+    background-color: #5066F0;
+    color: black;
+}
+
+.flip-card-back {
+    background-color: #5066F0;
+    color: #fff;
+    transform: rotateY(180deg);
+}
+
+.text_center {
+    padding: 117px 10px;
+    font-family: 'Poppins', serif;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.card_display {
+    display: flex;
+}
+
+@media only screen and (max-width: 780px) {
+    .card_display {
+        flex-direction: column;
+        text-align: center;
+    }
+    .flip-card {
+        width: 100%;
+        margin-left: -10px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .card_display {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    .card_display {
+        flex-direction: column;
+        text-align: center;
+    }
+    .flip-card {
+        margin-left: -27px;
+    }
+}
+
+
+/* =========contact section style============== */
+
+.phn {
+    font-family: 'Poppins', serif;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.email {
+    font-family: 'Poppins', serif;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.address {
+    font-family: 'Poppins', serif;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.contact_us h2 {
+    color: #FFC80A;
+    font-family: 'Poppins', sans-serif;
+    padding-bottom: 20px;
+    text-align: center;
+    font-weight: 900;
+    font-size: 40px;
+}
+
+
+/* footer style */
+
+.socials i {
+    background-color: #259dccc9;
+    border-radius: 50%;
+    padding: 20px !important;
+    font-size: 20px;
+}
+
+.socials a {
+    text-decoration: none;
+    color: #262626;
+}
+
+.socials a:hover {
+    color: #FFf;
+}
+
+.socials i:hover {
+    background-color: blue;
+}
+
+.socials {
+    padding-bottom: 20px;
+    border-bottom: 1px solid #fff;
+}
+
+.emon3,
+.emon2,
+.emon1 {
+    color: #d6c6b2 !important;
+}
+
+.emon5 {
+    width: 60px !important;
+}
+
+.footer-header {
+    font-family: 'Great Vibes', cursive;
+    font-size: 50px;
+    margin-bottom: -30px;
+}
+
+.bor {
+    border-bottom: 2px solid #d6c6b2;
+    font-family: tahoma;
+}
+
+@media only screen and (max-width: 360px) {
+    .footer-header {
+        font-size: 36px;
+    }
+    .copyright {
+        font-size: small;
+    }
+}
